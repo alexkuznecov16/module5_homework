@@ -1,12 +1,13 @@
 let x = true;
-if (typeof(x) == 'number'){
-    alert('Number')
-}
 
-if (typeof(x) == 'string'){
-    alert('String')
-}
-
-if (typeof(x) == 'boolean'){
-    alert('Logic type')
+switch (typeof(x)){
+    case 'number':
+        console.log(`${x} = number`);
+        break;
+    case 'string':
+        console.log(`${x} = string`);
+        break;
+    case 'boolean':
+        console.log(`${x} = boolean`);
+        break;
 }
